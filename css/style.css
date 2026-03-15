@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box; /* el width y height total incluye al padding y el border */
+}
+
+html{
+background: #000000;
+background: linear-gradient(180deg, rgba(0, 0, 0, 1) 47%, rgba(16, 19, 23, 0.9) 49%, rgba(255, 255, 255, 1) 58%);
+}
+
+h1,
+h2 
+{
+    /* font-weight: bold; */
+     font-weight: 400; 
+    /* font-weight: 900; */
+}
+
+.title{
+	background-color: #0A0614;
+	padding: 2px;
+}
+
+.title h1{
+	margin-left: 15px;
+	
+}
+
+
+.body{
+	
+}
+
+.page-header {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    margin-bottom: 2rem;
+}
+.page-header > h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.movie-cont{
+		display: flex;
+		background-image: radial-gradient(circle,rgba(16, 19, 23, 0.83) 44%, rgba(0, 0, 0, 0.9) 75%),
+			url("https://image.tmdb.org/t/p/original/gLQoJ9P79g501oEEtrN8zMlCPpx.jpg");
+		background-position: center; 
+    background-size: cover;
+		color: white;
+		height: 450px;
+
+	  justify-content: center;
+  	align-items: center;
+	
+		
+}
+
+
+.movie-format{
+		display: flex;
+	  padding: 1rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 56rem;
+    margin: 0 auto;
+		margin-top: 10px;
+    min-height: 100vh;
+		 justify-content: center;
+  	align-items: center;
+	
+	
+}
+
+
+
+.movie-title {
+    font-size: 2rem;
+    font-weight: bolder; 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.movie-info {
+    display: flex;
+	 
+}
+
+.movie-info  p  {
+    margin-top: 5px;
+}
+.movie-genre {
+    margin-top: 5px;
+    display: flex; /* Se recorren los elementos como si fueran texto */ 
+    padding-left: 0.5rem;
+}
+
+.movie-genre  li {
+    list-style-type: none; /* Sin bullets */
+    margin-right: 0.5rem; 
+}
+
+.top-movie 
+{
+    display: flex; /* Se recorren los elementos como si fueran texto */ 
+}
+
+.poster
+{
+    width: 300px;
+    height: 400px;
+    margin-right: 40px;
+		margin-left: 20px;
+}
+
+.cast-tit{
+	margin-top: 80px;
+	
+}
+
+.cast 
+{
+    display: flex; 
+	 	overflow-x: auto;
+		overflow-y: hidden;
+		width: 950px;
+    height: 300px;
+		margin-bottom: 50px;
+		border:1px solid;
+}
+
+.cast-item, .next
+{
+    margin: 15px;
+    font-weight: bold;
+	  display: inline-block;
+		text-align: center;
+		align-items: center;
+}
+
+.next img{
+	width: 50px;
+	height: 50px;	
+}
+
+
+.cast-item > h1
+{
+    margin-top: 0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.cast-item img
+{
+	  width: 140px;
+    height: 215px;
+}
+
+footer
+{
+    border-top: 1px solid #333;
+    height: 175px;
+}
+
+.title{
+	color: white;
+}
+
