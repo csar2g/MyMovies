@@ -30,6 +30,12 @@ li {
     margin-right: 10px;
 }
 
+
+.page-title:hover{
+
+	text-decoration: none;
+}
+
 .links {
     display: flex;
 	color: #0d53ba;

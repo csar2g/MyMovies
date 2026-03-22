@@ -35,6 +35,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.page-title:hover{
+
+	text-decoration: none;
+}
+
 .title {
     background-color: #141414;
     width: 100%;
@@ -168,24 +173,21 @@ a:hover {
     position: relative;
     display: inline-block;
     overflow: visible;
+    margin: 0 20px;
 }
 
 .poster {
     width: 350px;
     height: 500px;
-    margin-right: 40px;
-    margin-left: 20px;
+    margin: 0;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 20px; /* mismo margin que la imagen */
-    width: calc(100% - 60px); /* ajusta por márgenes */
-    height: 100%;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,8 +196,8 @@ a:hover {
     font-size: 24px;
     font-weight: bold;
 
-   transition: opacity 0.3s ease, transform 0.3s ease;
-   opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
 }
 
 .poster-container:hover .poster {
