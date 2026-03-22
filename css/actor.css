@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'NerdFont';
+    src: url('../fonts/SymbolsNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, 'NerdFont';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+.links {
+    display: flex;
+	color: #0d53ba;
+}
+
+.title {
+    background-color: #141414;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom: #dbbd0f 1px solid;
+}
+
+.title h1 {
+    margin-left: 15px;
+	color: #dbbd0f;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.nav li {
+    margin: 0 7px;
+}
+
+.searchbar {
+    font-size: medium;
+    height: 40px;
+    width: 350px;
+    margin: 0 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-left: auto;
+}
+
+.actor-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+	padding-bottom: 20px;
+    gap: 40px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+	background-color: #242424;
+	color: white;
+	border-bottom: 3px solid #dbbd0f;
+}
+
+.biography {
+    display: flex;
+    width: 80%;
+}
+
+.biography img {
+    height: 450px;
+    width: 300px;
+}
+
+.bio-content {
+    margin-left: 20px;
+}
+
+.bio-content p {
+    text-align: justify;
+}
+
+.personal-info {
+    margin-left: 50px;
+}
+
+.cast {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 950px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cast-item {
+    margin: 15px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
+}
+
+.cast-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.cast-container {
+    max-width: 1400px;
+}
+
+.cast-item > h1 {
+    margin: 0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.cast-item > p {
+    margin: 0;
+    font-size: smaller;
+}
+
+.cast-item img {
+    width: 140px;
+    height: 215px;
+    border-radius: 10px;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+	margin-bottom: 50px;
+}
+
+footer {
+    border-top: 2px solid #dbbd0f; 
+    height: 175px;
+    color: white;
+    background-color: #222324;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .actor-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .biography {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .biography img {
+        width: 250px;
+        height: auto;
+    }
+
+    .bio-content {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .personal-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .cast {
+        width: 90%;
+    }
+
+    .searchbar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .searchbar {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .biography {
+        width: 95%;
+    }
+
+    .cast {
+        width: 95%;
+        height: auto;
+    }
+
+    .cast-item img {
+        width: 110px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .biography img {
+        width: 200px;
+    }
+
+    .cast-item img {
+        width: 90px;
+    }
+
+    .cast-item h1 {
+        font-size: 12px;
+    }
+
+    .cast-item p {
+        font-size: 10px;
+    }
+}
